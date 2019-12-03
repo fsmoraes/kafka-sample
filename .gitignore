@@ -1,0 +1,45 @@
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+.env
+
+# Vim files
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Compiled class file and paths
+*.class
+/out
+/**/out
+/build
+/**/build
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### Terraform ###
+*.tfplan
+.terraform
