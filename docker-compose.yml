@@ -1,17 +1,6 @@
 version: '3.7'
 
 services:
-  kafka-sample:
-    container_name: kafka-sample
-    build:
-      context: .
-    image: demo/kafka-sample
-    depends_on:
-      - kafka
-    ports:
-      - "8080:8080"
-    init: true
-
   kafka:
     container_name: kafka
     image: "lensesio/fast-data-dev"
@@ -29,4 +18,4 @@ services:
       - "RUNTESTS=0"
       - "DISABLE_JMX=1"
       - "SUPERVISORWEB=1"
-      - "ADV_HOST=kafka"
+      - "ADV_HOST=127.0.0.1"
